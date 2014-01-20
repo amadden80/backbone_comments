@@ -1,0 +1,19 @@
+
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: backbone_comments_development
+  pool: 5
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: backbone_comments_test
+  pool: 5
+
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: backbone_comments_production
+  pool: 5

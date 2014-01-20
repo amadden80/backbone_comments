@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Backbone.JS-powered Blog</title>
+  <link href="stylesheets/base.css" rel="stylesheet" />
+  <link href="stylesheets/layout.css" rel="stylesheet" />
+  <link href="stylesheets/skeleton.css" rel="stylesheet" />
+  <link href="stylesheets/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <div id="main" class='container'>
+  </div>
+
+	<script src="javascripts/libraries/jquery.js"></script>
+	<script src="javascripts/libraries/underscore.js"></script>
+	<script src="javascripts/libraries/backbone.js"></script>
+	<script src="javascripts/libraries/handlebars.js"></script>
+
+	<script src="javascripts/backbone/app.js"></script>
+	<script src="javascripts/backbone/models/Comment.js"></script>
+	<script src="javascripts/backbone/collections/CommentList.js"></script>
+	<script src="javascripts/backbone/views/AppView.js"></script>
+	<script src="javascripts/backbone/views/comments/CommentListView.js"></script>
+	<script src="javascripts/backbone/views/comments/CommentView.js"></script>
+	<script src="javascripts/backbone/routers/router.js"></script>
+
+	<script id='appView-template' type="text/x-handlebars-template">
+	
+		
+
+		<h1 class="five columns">
+			Recent Comments
+		</h1>
+		
+		<ul id="comments" class="six columns">
+		</ul>
+		
+	</script>
+
+	<script id='commentList-template' type="text/x-handlebars-template">
+		<h4 class="comment-titles nine columns">
+			{{title}}
+		</h4>
+	</script>
+
+	<script id='commentView-template' type="text/x-handlebars-template">
+		
+		<div class="comment nine columns">
+			<h2 class="comment-title">
+				{{title}}
+			</h2>
+			<div class="comment-message">
+			{{{message}}}
+			</div>
+		</div>
+
+	</script>
+
+
+</body>
+</html>
